@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Profile - prashant</title>
+  <meta name="description" content="Personal profile page showcasing background, skills, and contact information.">
+
+  <style>
+   
+    :root {
+      --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --color-bg: #f7f8fa;
+      --color-card: #ffffff;
+      --color-text: #1c1c1e;
+      --color-accent: #2563eb;
+      --color-muted: #6b7280;
+      --radius: 12px;
+      --shadow: 0 4px 14px rgba(0,0,0,0.08);
+      --max-width: 900px;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--color-text);
+      background: var(--color-bg);
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    a {
+      color: var(--color-accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+   
+    #site-wrapper {
+      max-width: var(--max-width);
+      width: 100%;
+      background: var(--color-card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 2rem;
+    }
+
+   
+    header {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1.5rem;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    header img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid var(--color-accent);
+    }
+
+    header h1 {
+      font-size: 1.9rem;
+      font-weight: 700;
+    }
+
+    header p {
+      color: var(--color-muted);
+      margin-top: 0.3rem;
+      font-size: 0.95rem;
+    }
+
+    nav {
+      grid-column: 1 / -1;
+      margin-top: 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      font-weight: 600;
+    }
+
+    
+    main {
+      margin-top: 1.5rem;
+    }
+
+    section {
+      margin-top: 2rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 42px;
+      height: 3px;
+      background: var(--color-accent);
+      border-radius: 2px;
+    }
+
+    ul {
+      margin-top: 0.5rem;
+      list-style: inside square;
+      padding-left: 0.2rem;
+    }
+
+    article p,
+    article ul {
+      font-size: 0.97rem;
+      color: var(--color-text);
+    }
+
+   
+    footer {
+      margin-top: 2.5rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--color-muted);
+    }
+
+    
+    @media (max-width: 600px) {
+      header {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      nav ul {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<div id="site-wrapper">
+
+  <header>
+    <img src="C:\PHOTOS\Prashant p\OneDrive\Desktop\p.pdf">
+    <div>
+      <h1>Prashant Chaudhari</h1>
+      <p>Software development learner exploring Python, JavaScript, and web technologies with a growing focus on automation and structured problem-solving.</p>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <article>
+        <h2>About Me</h2>
+        <p>
+          I am a Bachelor of Computer Applications student from Maharashtra with a strong interest in software development and web technologies.
+           I enjoy working on practical projects that combine programming, clean user interfaces, and problem-solving. 
+           My experience includes building Python-based applications and responsive web projects using HTML, CSS, and JavaScript, along with exposure to data structures and basic machine learning concepts
+        </p>
+      </article>
+    </section>
+
+    <section id="education">
+      <article>
+        <h2>Education</h2>
+        <ul>
+          <li><strong>BCA / Institute of management Research and Development, Shirpur</strong> — July 2023 – Pursuing</li>
+          <li><strong>Python Certifications</strong> — Simplilearn – 2025</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="skills">
+      <article>
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML5 &amp; CSS3</li>
+          <li>JavaScript</li>
+          <li>Git &amp; GitHub</li>
+          <li>Python</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="contact">
+      <article>
+        <h2>Contact</h2>
+        <p>Feel free to reach out using the details below:</p>
+        <ul>
+          <li>Email: <a href="mailto:pc1293355@gmail.com">pc1293355@gmail.com</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/prashant-chaudhari-2549712a7" target="_blank">www.linkedin.com</a></li>
+          <li>GitHub: <a href=" https://github.com/Prashant9022p" target="_blank">github.com</a></li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span>prashant chaudhari— All rights reserved.</p>
+  </footer>
+
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
